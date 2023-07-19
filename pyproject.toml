@@ -1,0 +1,20 @@
+[project]
+name = "audio-share"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "djkcyl",email = "cyl@cyllive.cn"},
+]
+dependencies = [
+    "fastapi>=0.100.0",
+    "beanie>=1.20.0",
+    "miniopy-async>=1.15",
+    "ffmpeg-python>=0.2.0",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
