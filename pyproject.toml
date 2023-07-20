@@ -10,6 +10,10 @@ dependencies = [
     "beanie>=1.20.0",
     "miniopy-async>=1.15",
     "ffmpeg-python>=0.2.0",
+    "cos-python-sdk-v5>=1.9.25",
+    "uvicorn>=0.23.1",
+    "python-multipart>=0.0.6",
+    "orjson>=3.9.2",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
@@ -18,3 +22,6 @@ license = {text = "MIT"}
 [build-system]
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
+
+[project.scripts]
+audio-share = "audio_share.__main__:run"
